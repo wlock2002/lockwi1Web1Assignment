@@ -55,10 +55,10 @@ h1{
 body{
     
     font-family: 'Bebas Neue', cursive;
-
     background-image: url("../image/carbackground_darker.jpg");   
     background-size: 100%;
     background-attachment: fixed;
+
     background-blend-mode: darken ;
     
 
@@ -67,6 +67,7 @@ body{
 #container{   
     padding: 2rem;
 }
+
 
 #container1{
     text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
@@ -97,6 +98,7 @@ body{
     -7px 6px #cdd2d5,
     -7px 8px #808d93,
     -8px 7px #cdd2d5;*/
+
 
 }
 
