@@ -64,23 +64,25 @@ body{
 
 }
 
-#container{   
-    padding: 2rem;
+html{
+    height:100%;
 }
 
 
-#container1{
-    text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
-    color: rgb(255, 255, 255);
-    float: left;
-    font-size: 1000%;
+
+
+h2{
 }
 
 .heads{  
-    display: flex;
+  
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     padding: 0.8rem 0 0.8rem 4rem;
+    height:auto;
+    width:auto;
+    
     /*text-shadow:
     0 1px #808d93,
     -1px 0 #cdd2d5,
@@ -101,16 +103,43 @@ body{
 
 
 }
+#container1{
+    text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
+    color: rgb(255, 255, 255);
+    float: left;
+    width: auto;
+    height: 70% ;
+    font-size: 350%;
+    position: relative;
+    
 
+}
 #container2{
     color: rgb(255, 255, 255);
-    font-size: 1000%;
-    float: right; 
+    font-size: 300%;
+    /* float: right;  */
+    position: relative;
     text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
     display: none;
+    /* opacity: 0;
+    transition: 1s; */
+    /* visibility: hidden; */
 }
+/* #container2.fade{
+    opacity: 1;
+} */
+#container3{
+    /* visibility: hidden; */
+    display: none;
+}
+#container4{
+    /* visibility: hidden; */
+    display: none;
+}   
 
 sub{
+    position: relative;
+
     display: flex;
     flex-direction: column;
     
