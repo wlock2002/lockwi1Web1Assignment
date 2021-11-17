@@ -13,30 +13,36 @@ $(document).ready(function(e) {
     $("#container").click(function(){
         disappear();
         document.getElementById('container1').setAttribute("style","transform:scale(1)");
-
+        // scaleUp();
     });
     //Main tabs to reach side "pages"
     $("#vehicles").click(function(){
         // shrink();
+        // fadeIn();
+        scaleDown();
         document.getElementById('container2').setAttribute("style","display:block");
-        $("#container1").animate({
-            width: "50%",
-            opacity: 0.8,
-            marginTop: "5%",
-            marginLeft: "0",
-            fontSize: "2em",
-        }, 1000, function() {
-            // Animation complete.
-        });
+        document.getElementById('container3').setAttribute("style","display:none");
+        document.getElementById('container4').setAttribute("style","display:none");
+        
     });
     $("#news").click(function(){
-        shrink();
+        //shrink();
+        scaleDown()        
         document.getElementById('container3').setAttribute("style","display:block");
+        document.getElementById('container2').setAttribute("style","display:none");
+        document.getElementById('container4').setAttribute("style","display:none");
+        
     });
     $("#about").click(function(){
-        shrink();
+        //shrink();
+        scaleDown()
         document.getElementById('container4').setAttribute("style","display:block");
+        document.getElementById('container3').setAttribute("style","display:none");
+        document.getElementById('container2').setAttribute("style","display:none");
     });
+
+
+
     //calling Individual vehicles pages
    $("#altezza").click(function(){
         document.getElementById('altezzaInfo').setAttribute("style","display:block");
@@ -58,6 +64,32 @@ $(document).ready(function(e) {
 
 });
 
+function scaleDown()
+{
+    $("#container1").animate({
+        width: "50%",
+        opacity: 0.8,
+        marginTop: "5%",
+        marginLeft: "0",
+        fontSize: "175%",
+    }, 1000, function() {
+        // Animation complete.
+    });
+    
+}
+function scaleUp()
+{
+    $("#container1").animate({
+        fontSize: "350%",
+    }, 1000, function() {
+        // Animation complete.
+    });
+}
+function fadeIn()
+{   
+
+    $("container2").fadeIn(1000);
+}
 
 
 
