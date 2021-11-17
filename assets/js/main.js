@@ -15,10 +15,19 @@ $(document).ready(function(e) {
         document.getElementById('container1').setAttribute("style","transform:scale(1)");
 
     });
-    //Main tabs
+    //Main tabs to reach side "pages"
     $("#vehicles").click(function(){
-        shrink();
+        // shrink();
         document.getElementById('container2').setAttribute("style","display:block");
+        $("#container1").animate({
+            width: "50%",
+            opacity: 0.8,
+            marginTop: "5%",
+            marginLeft: "0",
+            fontSize: "2em",
+        }, 1000, function() {
+            // Animation complete.
+        });
     });
     $("#news").click(function(){
         shrink();
@@ -28,8 +37,8 @@ $(document).ready(function(e) {
         shrink();
         document.getElementById('container4').setAttribute("style","display:block");
     });
-    //Individual vehicles
-    $("#altezza").click(function(){
+    //calling Individual vehicles pages
+   $("#altezza").click(function(){
         document.getElementById('altezzaInfo').setAttribute("style","display:block");
         document.getElementById('hiluxInfo').setAttribute("style","display:none");
         document.getElementById('chaserInfo').setAttribute("style","display:none");
@@ -47,7 +56,7 @@ $(document).ready(function(e) {
 
 
 
- });
+});
 
 
 
@@ -101,6 +110,8 @@ function shrink()
     // alert("bada bing bada bpomm shrink");
     document.getElementById('container1').setAttribute("style","transform:scale(0.5)");
     // document.getElementsByClassName("container1").setAttribute("style","width:10%")
+
+
 }
 
 // function shrinkX2()
