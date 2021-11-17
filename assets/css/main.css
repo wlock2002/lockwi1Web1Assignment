@@ -1,12 +1,12 @@
-h1{
+#container{
     display: flex;
     justify-content: flex-start;
     
     color:rgb(255, 255, 255);
-    font-size: 300%;
-    padding: 2rem 0 2rem 4rem;
-    margin: 0;
-    border: 0;
+    font-size: 150%;
+    padding-left: 3%;
+    /* margin: 0;
+    border: 0; */
     
     /*text-shadow:
     0 1px #e5472c,
@@ -63,6 +63,12 @@ body{
     
 
 }
+
+/* .logo{
+    width: 7%;
+    height: 7%;
+    padding-top: 1.5%;
+} */
 
 html{
     height:100%;
@@ -132,6 +138,8 @@ h2{
     padding-left: 35%;
     text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
     height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     /* opacity: 0;
     transition: 1s; */
     /* visibility: hidden; */
@@ -168,9 +176,11 @@ p {
     justify-content: space-between;
     /* padding: 0.8rem 0 0.8rem 4rem; */
     height:auto;
-    width:auto;
+    width:60%;
     color: white;
     font-size:30px;
+    text-shadow: -1px 1px 1px #ffd217, -2px 2px 2px black;
+
     
 }
 #altezzaInfo, #hiluxInfo, #chaserInfo{
