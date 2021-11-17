@@ -69,8 +69,6 @@ html{
 }
 
 
-
-
 h2{
 }
 
@@ -179,12 +177,21 @@ p {
     display: none;
     position: absolute;
     
-    padding-left: 20% !important;
+    padding-left: 10% !important;
     /* background-color: lightgrey;
     opacity: .2; */
     width:100%;
 
     /* position: ; */
+}
+
+.backOpacity {
+    background-color: lightgrey;
+}
+
+img {
+    width: 40%;
+    height: 30%;
 }
 /*ul{
     display: flex;
