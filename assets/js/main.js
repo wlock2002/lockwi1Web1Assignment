@@ -1,27 +1,62 @@
+//Function to go home when home is clicked.
+// function home()
+// {   
+//     document.getElementById('container1').setAttribute("style","transform:scale(1)");
+
+//     disappear();
+// }
+
+
+//Main links using Ajax and Jquery to make the text function as buttons. 
+$(document).ready(function(e) {   
+    $("#container").click(function(){
+        disappear();
+        document.getElementById('container1').setAttribute("style","transform:scale(1)");
+
+    });
+    $("#vehicles").click(function(){
+        shrink();
+        document.getElementById('container2').setAttribute("style","display:block");
+    });
+    $("#news").click(function(){
+        shrink();
+        document.getElementById('container3').setAttribute("style","display:block");
+    });
+    $("#about").click(function(){
+        shrink();
+        document.getElementById('container4').setAttribute("style","display:block");
+    });
+
+
+
+ });
+
+
+
 
 //functions that are used to call the subpages.
-function vehicles()
-{
+// function vehicles()
+// {
     
-    shrink();
-    // alert('you clicked vehicles');
-    // var temp = document.getElementsByClassName("container2");
-    // temp.forEach(div =>{div.style.display = "flex"});
-    // document.getElementById('container2').classList.toggle('fade');
-    document.getElementById('container2').setAttribute("style","display:block");
-}
-function news()
-{
-    shrink();
-    // alert('you clicked news');
-    document.getElementById('container3').setAttribute("style","display:block");
-}
-function about()
-{
-    shrink();
-    // alert("you clicked about");
-    document.getElementById('container4').setAttribute("style","display:block");
-}
+//     shrink();
+//     // alert('you clicked vehicles');
+//     // var temp = document.getElementsByClassName("container2");
+//     // temp.forEach(div =>{div.style.display = "flex"});
+//     // document.getElementById('container2').classList.toggle('fade');
+//     document.getElementById('container2').setAttribute("style","display:block");
+// }
+// function news()
+// {
+//     shrink();
+//     // alert('you clicked news');
+//     document.getElementById('container3').setAttribute("style","display:block");
+// }
+// function about()
+// {
+//     shrink();
+//     // alert("you clicked about");
+//     document.getElementById('container4').setAttribute("style","display:block");
+// }
 
 function altezza()
 {

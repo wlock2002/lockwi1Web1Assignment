@@ -121,7 +121,7 @@ h2{
     position: absolute;
     text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
     display: none;
-    padding-left:20%;
+    margin-left:20%;
     /* opacity: 0;
     transition: 1s; */
     /* visibility: hidden; */
@@ -144,15 +144,15 @@ h2{
 #container3{ 
     visibility: hidden; 
     display: none; 
-    padding-left:20%;
+    margin-left:20%;
 
 }
 #container4 {
+    margin-left:20%;
     /* visibility: hidden; */
     display: none;
     position: absolute;
-    padding-left:20%;
-
+    
 
 }   
 
@@ -168,7 +168,7 @@ p {
     position: relative;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0.8rem 0 0.8rem 4rem;
+    /* padding: 0.8rem 0 0.8rem 4rem; */
     height:auto;
     width:auto;
     color: white;
@@ -180,6 +180,10 @@ p {
     position: absolute;
     
     padding-left: 20% !important;
+    /* background-color: lightgrey;
+    opacity: .2; */
+    width:100%;
+
     /* position: ; */
 }
 /*ul{
