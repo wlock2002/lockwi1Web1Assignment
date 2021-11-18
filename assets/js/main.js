@@ -14,6 +14,21 @@
 
 //Main links using Ajax and Jquery to make the text function as buttons. 
 $(document).ready(function(e) {   
+    //block of code used for circle that follows mouse around screen
+    var mouseX = 0, mouseY = 0;
+    var xp = 0, yp = 0;
+    
+    $(document).mousemove(function(e){
+        mouseX = e.pageX - 30;
+        mouseY = e.pageY - 30; 
+    });
+        
+    setInterval(function(){
+        xp += ((mouseX - xp)/6);
+        yp += ((mouseY - yp)/6);
+        $("#circle").css({left: xp +'px', top: yp +'px'});
+    }, 20);
+
     //Home
     $("#container").click(function(){
         disappear();
