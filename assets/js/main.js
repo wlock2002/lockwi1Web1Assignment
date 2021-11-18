@@ -18,6 +18,7 @@ $(document).ready(function(e) {
     var mouseX = 0, mouseY = 0;
     var xp = 0, yp = 0;
     
+    //updating moving mouse
     $(document).mousemove(function(e){
         mouseX = e.pageX - 30;
         mouseY = e.pageY - 30; 
@@ -106,6 +107,7 @@ $(document).ready(function(e) {
 
 });
 
+//funtion for animation to scale down
 function scaleDown()
 {
     $("#container1").animate({
@@ -119,6 +121,7 @@ function scaleDown()
     });
     
 }
+//function for animation to scale up
 function scaleUp()
 {
     $("#container1").animate({
@@ -141,6 +144,7 @@ function fadeOut()
         // Animation complete.
     });
 }
+//function for fading into the content
 function fadeIn()
 {
     $("#container2,#altezzaInfo,#hiluxInfo,#chaserInfo,#container3,#container4").animate({
@@ -194,6 +198,7 @@ function fadeIn()
 //     document.getElementById('altezzaInfo').setAttribute("style","display:none");
 // }
 
+//function for shrinking 
 function shrink()
 {   
     disappear();
@@ -209,6 +214,8 @@ function shrink()
 //     document.getElementById('container2').setAttribute("style","transform:scale(0.5)");
 //     document.getElementById('container1').setAttribute("style","transform:scale(0.5)");
 // }
+
+//funciton for making different content disappear
 function disappear()
 {
     document.getElementById('container2').setAttribute("style","display:none");
