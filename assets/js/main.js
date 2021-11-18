@@ -91,7 +91,7 @@ function scaleDown()
     $("#container1").animate({
         width: "50%",
         opacity: 0.8,
-        
+        marginTop: "20%",
         marginLeft: "0",
         fontSize: "175%",
     }, 750, function() {
@@ -105,6 +105,7 @@ function scaleUp()
         width: "100%",
         opacity: 1,
         marginLeft: "0",
+        marginTop: "0%",
         fontSize: "350%",
     }, 750, function() {
         // Animation complete.
