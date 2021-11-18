@@ -2,6 +2,10 @@
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
+#container5::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
 
 
 /*First container which includes the header of page visible top left of website*/
@@ -67,12 +71,11 @@ body::-webkit-scrollbar {
 body{
     
     font-family: 'Bebas Neue', cursive;
-    background-image: url("../image/carbackground_darker.jpg");   
+    background: url("../image/carbackground_darker.jpg") ;   
     background-size: cover;
     background-attachment: fixed;
 
     background-blend-mode: darken ;
-    
 
 }
 
@@ -121,6 +124,12 @@ html{
 
 
 }
+#vehicles:hover, #news:hover, #about:hover, #altezza:hover, #hilux:hover, #chaser:hover{
+    text-shadow: -1px 1px 1px white, -2px 2px 0 #ffffff, -3px 3px 0 #ffffff, -4px 4px 0 #ffffff, -5px 5px 0 #ffffff, -6px 6px 0 #ffffff, -7px 7px 7px black;
+    color: #ffd217;
+    /* font-size: 110%; */
+}
+
 /*this container includes the info of .heads above, but includes all of the text etc*/
 #container1{
     text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
@@ -142,8 +151,8 @@ html{
     text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
     display: none;
     margin-left:20%;
-    /* opacity: 0;
-    transition: 1s; */
+    opacity: 0;
+    transition: 1s; 
     /* visibility: hidden; */
 }
 
@@ -155,11 +164,12 @@ html{
     /* float:right; */
     padding-left: 35%;
     text-shadow: -1px 1px 1px #ffd217, -2px 2px 0 #ffd217, -3px 3px 0 #ffd217, -4px 4px 0 #ffd217, -5px 5px 0 #ffd217, -6px 6px 0 #ffd217, -7px 7px 7px black;
-    height:100%;
-    overflow-y: auto;
+    height: 700px;
+    overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
     width:50%;
+    /* opacity: 0; */
     /* opacity: 0;
     transition: 1s; */
     /* visibility: hidden; */
@@ -173,15 +183,19 @@ html{
     visibility: hidden; 
     display: none; 
     margin-left:20%;
+    overflow-y:scroll;
+    height:700px;
+    /* opacity: 0; */
 
 }
 /*Info about the about page being styled/ positioned*/
 #container4 {
     margin-left:20%;
+    margin-right: 10%;
     /* visibility: hidden; */
     display: none;
     position: absolute;
-    
+    /* opacity: 0; */
 
 }   
 
@@ -219,7 +233,7 @@ p {
     /* background-color: lightgrey;
     opacity: .2; */
     width:100%;
-
+    opacity: 0;
     /* position: ; */
 }
 

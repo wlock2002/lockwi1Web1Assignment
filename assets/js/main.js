@@ -12,13 +12,14 @@ $(document).ready(function(e) {
     //Home
     $("#container").click(function(){
         disappear();
+        // fadeOut();
         //document.getElementById('container1').setAttribute("style","transform:scale(1)");
         scaleUp();
     });
     //Main tabs to reach side "pages"
     $("#vehicles").click(function(){ //showing container2 while making others invisble
         // shrink();
-        // fadeIn();
+        fadeIn();
         disappear();
         scaleDown();
         document.getElementById('container2').setAttribute("style","display:block");
@@ -28,6 +29,7 @@ $(document).ready(function(e) {
     });
     $("#news").click(function(){//showing container3 while making others invisble
         //shrink();
+        // fadeOut();
         disappear();
         scaleDown();    
         document.getElementById('container3').setAttribute("style","display:block");
@@ -37,7 +39,9 @@ $(document).ready(function(e) {
     });
     $("#about").click(function(){//showing container4 while making others invisble
         //shrink();
-        disappear();
+        fadeIn();
+        // fadeOut();
+        //disappear();
         scaleDown();
         document.getElementById('container4').setAttribute("style","display:block");
         document.getElementById('container3').setAttribute("style","display:none");
@@ -48,21 +52,35 @@ $(document).ready(function(e) {
 
     //calling Individual vehicles pages
    $("#altezza").click(function(){ //showing altezzaInfo while making others invisble
+        
+        //fadeIn();
+        document.getElementById('container5').setAttribute("style","display:block");
         document.getElementById('altezzaInfo').setAttribute("style","display:block");
         document.getElementById('hiluxInfo').setAttribute("style","display:none");
         document.getElementById('chaserInfo').setAttribute("style","display:none");
+        
     });
     $("#hilux").click(function(){ //showing hiluxInfo while making others invisble
+        
+        //fadeIn();
+        document.getElementById('container5').setAttribute("style","display:block");
         document.getElementById('hiluxInfo').setAttribute("style","display:block");
         document.getElementById('altezzaInfo').setAttribute("style","display:none");
         document.getElementById('chaserInfo').setAttribute("style","display:none");
     });
     $("#chaser").click(function(){ //showing chaserInfo while making others invisble
+        
+        //fadeIn();
+        document.getElementById('container5').setAttribute("style","display:block");
         document.getElementById('chaserInfo').setAttribute("style","display:block");
         document.getElementById('hiluxInfo').setAttribute("style","display:none");
         document.getElementById('altezzaInfo').setAttribute("style","display:none");
     });
 
+    $("#container2").click(function(){ //showing chaserInfo while making others invisble
+        //fadeOut();
+        fadeIn()
+    });
 
 
 });
@@ -75,7 +93,7 @@ function scaleDown()
         
         marginLeft: "0",
         fontSize: "175%",
-    }, 1000, function() {
+    }, 750, function() {
         // Animation complete.
     });
     
@@ -87,17 +105,29 @@ function scaleUp()
         opacity: 1,
         marginLeft: "0",
         fontSize: "350%",
-    }, 1000, function() {
+    }, 750, function() {
+        // Animation complete.
+    });
+}
+//function for fading out the content
+function fadeOut()
+{
+    $("#altezzaInfo,#hiluxInfo,#chaserInfo").animate({
+       
+        opacity: 0,
+    }, 300, function() {
         // Animation complete.
     });
 }
 function fadeIn()
-{   
-
-    $("container2").fadeIn(1000);
+{
+    $("#container2,#altezzaInfo,#hiluxInfo,#chaserInfo").animate({
+       
+        opacity: 1,
+    }, 400, function() {
+        // Animation complete.
+    });
 }
-
-
 
 //functions that are used to call the subpages.
 // function vehicles()
@@ -162,6 +192,8 @@ function disappear()
     document.getElementById('container2').setAttribute("style","display:none");
     document.getElementById('container3').setAttribute("style","display:none");
     document.getElementById('container4').setAttribute("style","display:none");
+    document.getElementById('container5').setAttribute("style","display:none");
+
     document.getElementById('altezzaInfo').setAttribute("style","display:none");
     document.getElementById('hiluxInfo').setAttribute("style","display:none");
     document.getElementById('chaserInfo').setAttribute("style","display:none");
