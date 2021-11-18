@@ -185,7 +185,7 @@ html{
     margin-left:20%;
     overflow-y:scroll;
     height:700px;
-    /* opacity: 0; */
+    opacity: 0;
 
 }
 /*Info about the about page being styled/ positioned*/
@@ -195,7 +195,7 @@ html{
     /* visibility: hidden; */
     display: none;
     position: absolute;
-    /* opacity: 0; */
+    opacity: 0;
 
 }   
 

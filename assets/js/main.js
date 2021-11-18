@@ -30,6 +30,7 @@ $(document).ready(function(e) {
     $("#news").click(function(){//showing container3 while making others invisble
         //shrink();
         // fadeOut();
+        fadeIn();
         disappear();
         scaleDown();    
         document.getElementById('container3').setAttribute("style","display:block");
@@ -121,7 +122,7 @@ function fadeOut()
 }
 function fadeIn()
 {
-    $("#container2,#altezzaInfo,#hiluxInfo,#chaserInfo").animate({
+    $("#container2,#altezzaInfo,#hiluxInfo,#chaserInfo,#container3,#container4").animate({
        
         opacity: 1,
     }, 400, function() {
