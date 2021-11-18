@@ -12,30 +12,33 @@ $(document).ready(function(e) {
     //Home
     $("#container").click(function(){
         disappear();
-        document.getElementById('container1').setAttribute("style","transform:scale(1)");
-        // scaleUp();
+        //document.getElementById('container1').setAttribute("style","transform:scale(1)");
+        scaleUp();
     });
     //Main tabs to reach side "pages"
-    $("#vehicles").click(function(){
+    $("#vehicles").click(function(){ //showing container2 while making others invisble
         // shrink();
         // fadeIn();
+        disappear();
         scaleDown();
         document.getElementById('container2').setAttribute("style","display:block");
         document.getElementById('container3').setAttribute("style","display:none");
         document.getElementById('container4').setAttribute("style","display:none");
         
     });
-    $("#news").click(function(){
+    $("#news").click(function(){//showing container3 while making others invisble
         //shrink();
-        scaleDown()        
+        disappear();
+        scaleDown();    
         document.getElementById('container3').setAttribute("style","display:block");
         document.getElementById('container2').setAttribute("style","display:none");
         document.getElementById('container4').setAttribute("style","display:none");
         
     });
-    $("#about").click(function(){
+    $("#about").click(function(){//showing container4 while making others invisble
         //shrink();
-        scaleDown()
+        disappear();
+        scaleDown();
         document.getElementById('container4').setAttribute("style","display:block");
         document.getElementById('container3').setAttribute("style","display:none");
         document.getElementById('container2').setAttribute("style","display:none");
@@ -44,17 +47,17 @@ $(document).ready(function(e) {
 
 
     //calling Individual vehicles pages
-   $("#altezza").click(function(){
+   $("#altezza").click(function(){ //showing altezzaInfo while making others invisble
         document.getElementById('altezzaInfo').setAttribute("style","display:block");
         document.getElementById('hiluxInfo').setAttribute("style","display:none");
         document.getElementById('chaserInfo').setAttribute("style","display:none");
     });
-    $("#hilux").click(function(){
+    $("#hilux").click(function(){ //showing hiluxInfo while making others invisble
         document.getElementById('hiluxInfo').setAttribute("style","display:block");
         document.getElementById('altezzaInfo').setAttribute("style","display:none");
         document.getElementById('chaserInfo').setAttribute("style","display:none");
     });
-    $("#chaser").click(function(){
+    $("#chaser").click(function(){ //showing chaserInfo while making others invisble
         document.getElementById('chaserInfo').setAttribute("style","display:block");
         document.getElementById('hiluxInfo').setAttribute("style","display:none");
         document.getElementById('altezzaInfo').setAttribute("style","display:none");
@@ -69,7 +72,7 @@ function scaleDown()
     $("#container1").animate({
         width: "50%",
         opacity: 0.8,
-        marginTop: "5%",
+        
         marginLeft: "0",
         fontSize: "175%",
     }, 1000, function() {
@@ -80,6 +83,9 @@ function scaleDown()
 function scaleUp()
 {
     $("#container1").animate({
+        width: "100%",
+        opacity: 1,
+        marginLeft: "0",
         fontSize: "350%",
     }, 1000, function() {
         // Animation complete.
