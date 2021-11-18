@@ -42,7 +42,7 @@ $(document).ready(function(e) {
         //shrink();
         fadeIn();
         // fadeOut();
-        //disappear();
+        disappear();
         scaleDown();
         document.getElementById('container4').setAttribute("style","display:block");
         document.getElementById('container3').setAttribute("style","display:none");
