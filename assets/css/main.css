@@ -233,8 +233,14 @@ p {
     /* background-color: lightgrey;
     opacity: .2; */
     width:100%;
+    
     opacity: 0;
     /* position: ; */
+}
+
+#altezza,#hilux,#chaser{
+    padding-bottom:5%;
+    font-size:130%;
 }
 
 

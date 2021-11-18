@@ -6,6 +6,11 @@
 //     disappear();
 // }
 
+//getting car database API
+// $.get( "https://api.car2db.com/api/auto/v1/type/getAll/csv/en/api_key&api_key=[api_key]", function( data ) {
+//     $( ".result" ).html( data );
+//     alert( "Load was performed." );
+//   });
 
 //Main links using Ajax and Jquery to make the text function as buttons. 
 $(document).ready(function(e) {   
